@@ -19,7 +19,14 @@ int main() {
 
     for (int cont = 0; cont < tamanho; cont++)
     {
-        printf("%d\n", vetor[cont]);
+        printf("%d é", vetor[cont]);
+        if(vetor[cont] > 0) {
+            printf(" positivo\n");
+        } else if (vetor[cont] < 0) {
+            printf(" negativo\n");
+        } else {
+            printf(" igual à zero\n");
+        }
     }
     
     return 0;
